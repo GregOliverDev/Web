@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+**,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  background: linear-gradient(360deg, rgb(247, 116, 116), #ffffff, #000);
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+div {
+  color: white;
+  margin: 10px;
+}
+
+#balance,
+#betting-area,
+#race-track,
+#result {
+  margin: 20px;
+}
+
+#race-track {
+  height: 300px;
+  width: 700px;
+  background-color: #ddd;
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  background-image: url(assets/raceTrack.png);
+  background-position: center left;
+  background-size: 700px 600px;
+  background-repeat: no-repeat;
+  gap: 16px;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  rotate: -90deg;
+}
+.car {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 40px; /* Ajuste a posição inicial conforme necessário */
+}
+
+#betting-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+button{
+  font-size: 18px;
+  border: 0px solid;
+  border-radius: 5px;
+  width: 80px;
+}
+
+button:active
+{
+  background: red;
+}
+input{
+  font-size: 18px;
+  width: 70px;
+  border: 0px solid;
+  border-radius: 5px;
+  outline: none;
+}
+
+select{
+  font-size: 18px;
+  border: 0px solid;
+  border-radius: 5px;
+  outline: none;
+}
+
+#result{
+  color: black;
+}
