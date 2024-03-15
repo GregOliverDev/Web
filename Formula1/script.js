@@ -1,6 +1,8 @@
 let balance = 100;
 let raceInProgress = false;
-
+const checkTheft = document.getElementById("checkTheft");
+var isChecked;
+var carSelect = 0;
 //function click button
 function placeBet() {
   //check the button click during the race
@@ -15,6 +17,21 @@ function placeBet() {
   const selectedDriver = parseInt(
     document.getElementById("selectedDriver").value
   );
+  isChecked = checkTheft.checked;
+
+  if (isChecked == true) {
+    if (selectedDriver == 1) {
+      carSelect = 0;
+    } else if (selectedDriver == 2) {
+      carSelect = 1;
+    } else if (selectedDriver == 3) {
+      carSelect = 2;
+    } else if (selectedDriver == 4) {
+      carSelect = 3;
+    } else if (selectedDriver == 5) {
+      carSelect = 4;
+    }
+  }
 
   //check amount bet
   if (betAmount < 5 || betAmount > balance) {
@@ -54,7 +71,18 @@ function resetRace() {
 //function move images car
 function moveCars() {
   const cars = document.querySelectorAll(".car");
-  cars.forEach((car) => {
+  cars.forEach((car, index) => {
+
+    if (isChecked == true) {
+      if (index == carSelect) {
+        const moveAmount = Math.floor(Math.random() * 30) + 1;
+        car.style.left = `${parseInt(car.style.left) + moveAmount}px`;
+
+        // Move the image inside the car div
+        const carImage = car.querySelector("img");
+        carImage.style.marginLeft = car.style.left;
+      }
+    }
     const moveAmount = Math.floor(Math.random() * 5) + 1;
     car.style.left = `${parseInt(car.style.left) + moveAmount}px`;
 
