@@ -104,3 +104,13 @@ select{
 #result{
   color: black;
 }
+
+#HelpPilot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pHelp{
+  color: transparent;
+}
