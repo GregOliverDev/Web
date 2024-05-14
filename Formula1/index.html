@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>F1 Racing Bet</title>
+  </head>
+  <body>
+    <h1>Bets Started</h1>
+    <div id="balance">Balance: R$100</div>
+    <div id="betting-area">
+      <label for="betAmount">Bet Amount(Min: R$5):</label>
+      <input type="number" id="betAmount" min="5" />
+      <label for="selectedDriver">Chose your pilot:</label>
+      <select id="selectedDriver">
+        <option value="1">Blue Pilot</option>
+        <option value="2">Red Pilot</option>
+        <option value="3">Purple Pilot</option>
+        <option value="4">Yellow Pilot</option>
+        <option value="5">Green Pilot</option>
+      </select>
+      <button onclick="placeBet()">Bet</button>
+    </div>
+    <div id="race-track">
+      <div class="car" id="car1">
+        <img src="assets/car-blue.png" />
+      </div>
+      <div class="car" id="car2">
+        <img src="assets/car-red.png" />
+      </div>
+      <div class="car" id="car3">
+        <img src="assets/car-purple.png" />
+      </div>
+      <div class="car" id="car4">
+        <img src="assets/car-yellow.png" />
+      </div>
+      <div class="car" id="car5">
+        <img src="assets/car-green.png" />
+      </div>
+    </div>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
