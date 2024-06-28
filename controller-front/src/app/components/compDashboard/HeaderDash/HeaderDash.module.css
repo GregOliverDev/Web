@@ -1,0 +1,19 @@
+.headerDash {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--color-one);
+  border-bottom: 2px solid var(--color-border-first);
+  padding: 1rem;
+}
+
+.divImg {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}

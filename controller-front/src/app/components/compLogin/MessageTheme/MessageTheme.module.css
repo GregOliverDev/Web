@@ -1,0 +1,63 @@
+.divMessage {
+  width: 23rem;
+  height: 6rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  background: var(--color-warning-error);
+  border-radius: 8px;
+}
+
+.textTitle {
+  color: var(--color-warning-one);
+}
+
+.messageError {
+  color: var(--color-warning-two);
+}
+
+.divMessageSucess {
+  width: 23rem;
+  height: 6rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  background: var(--color-warning-sucess);
+  border-radius: 8px;
+}
+
+.textTitleSucess {
+  color: var(--color-warning-three);
+}
+
+.messageSucess {
+  color: var(--color-warning-four);
+}
+
+@media (max-width: 500px) {
+  .divMessage {
+    width: 19rem;
+    height: 8rem;
+    margin: 0.5rem;
+  }
+
+  .divMessageSucess {
+    width: 19rem;
+    height: 8rem;
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .divMessage {
+    display: none;
+  }
+
+  .divMessageSucess {
+    display: none;
+  }
+}

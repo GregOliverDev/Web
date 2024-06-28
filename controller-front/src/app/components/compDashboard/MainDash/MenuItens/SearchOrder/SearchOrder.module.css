@@ -1,0 +1,151 @@
+.divScreen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.searchOrder {
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 3;
+}
+
+.divFilter {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.divTransparent {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-blur-menu);
+  z-index: 1;
+}
+
+.divTotals {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  position: fixed;
+  z-index: 9;
+  bottom: 5rem;
+  left: 7rem;
+}
+
+/*Search Orders*/
+.divOrderSearch {
+  width: 95%;
+  height: 85vh;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  position: fixed;
+  padding: 2rem;
+  top: 7rem;
+  z-index: 6;
+  background: var(--color-six);
+}
+
+.divFilter {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.ordersFilter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  overflow-y: scroll;
+  text-align: justify;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+}
+
+.h3Order {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.btAlterOrder .btDefaul {
+  width: 20rem;
+}
+
+.orders {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 1px solid var(--color-text-two);
+}
+
+.h3Order {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.divDesc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/*Paper*/
+.paperSearch {
+  padding: 8px 15px;
+}
+
+/*Defaul itens*/
+.btDefaul {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.4rem;
+  background-color: var(--color-four);
+}
+
+.btDefaul:hover {
+  background-color: var(--color-four);
+}
+
+.btDefaulCancel {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.4rem;
+  background-color: var(--color-warning-error);
+}
+
+.btDefaulCancel:hover {
+  background-color: var(--color-warning-error);
+}
